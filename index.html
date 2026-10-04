@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <title>Tecnico dell'Anno 2026 🏆</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="confetti-container" id="confetti"></div>
+
+  <main class="page">
+    <section class="hero">
+      <div class="badge">🌍 PREMIO MONDIALE</div>
+      <h1>🏆 Tecnico migliore del mondo</h1>
+      <p class="subtitle">Edizione ufficiale 2026 — <span>sondaggio rigorosamente imparziale*</span></p>
+      <p class="fineprint">*L'imparzialità del sistema potrebbe essere soggetta a piccoli problemi tecnici.</p>
+    </section>
+
+    <section class="card">
+      <div class="progress">
+        <div class="progress-label">
+          <span>Affluenza mondiale</span>
+          <strong id="voters">1.284.729</strong>
+        </div>
+        <div class="progress-bar"><div></div></div>
+      </div>
+
+      <h2>Chi merita il titolo?</h2>
+      <p class="instruction">Scegli il tecnico migliore. Cerca di fare la scelta giusta. 😏</p>
+
+      <div class="candidates" id="candidates">
+        <button class="candidate winner" data-name="Emanuele Casu" data-winner="true">
+          <span class="avatar">👨‍💻</span>
+          <span class="candidate-info">
+            <strong>Emanuele Casu</strong>
+            <small>"Spegni e Riaccendi"</small>
+          </span>
+          <span class="crown">👑</span>
+        </button>
+
+        <button class="candidate escape" data-name="Mario Rossi">
+          <span class="avatar">🧑‍🔧</span>
+          <span class="candidate-info">
+            <strong>Mario Rossi</strong>
+            <small>Specialista hardware</small>
+          </span>
+        </button>
+
+        <button class="candidate escape" data-name="Luca Bianchi">
+          <span class="avatar">👨‍🔧</span>
+          <span class="candidate-info">
+            <strong>Luca Bianchi</strong>
+            <small>Esperto di reti</small>
+          </span>
+        </button>
+
+        <button class="candidate escape" data-name="Andrea Verdi">
+          <span class="avatar">🧑‍💻</span>
+          <span class="candidate-info">
+            <strong>Andrea Verdi</strong>
+            <small>Guru del software</small>
+          </span>
+        </button>
+
+        <button class="candidate escape" data-name="Paolo Neri">
+          <span class="avatar">👨‍🔬</span>
+          <span class="candidate-info">
+            <strong>Paolo Neri</strong>
+            <small>Specialista sistemi</small>
+          </span>
+        </button>
+      </div>
+
+      <div class="attempt-box" id="attemptBox">
+        <span>🗳️</span>
+        <span id="attemptText">Il tuo voto è importante.</span>
+      </div>
+
+      <button class="vote-button" id="voteButton">VOTA IL TECNICO MIGLIORE 🚀</button>
+
+      <p class="privacy">Nessun dato personale viene raccolto. Nessun tecnico è stato maltrattato durante il sondaggio.</p>
+    </section>
+
+    <section class="results hidden" id="results">
+      <div class="trophy">🏆</div>
+      <div class="result-kicker">RISULTATO UFFICIALE</div>
+      <h2 id="resultTitle">EMANUELE CASU</h2>
+      <div class="nickname">"Spegni e Riaccendi"</div>
+      <div class="result-number">100<span>%</span></div>
+      <p>Il popolo mondiale ha parlato.</p>
+
+      <div class="result-card">
+        <div><span>🥇 Emanuele Casu</span><strong>100,0%</strong></div>
+        <div><span>🥈 Tutti gli altri</span><strong>0,0%</strong></div>
+      </div>
+
+      <p class="official">✓ Voto registrato correttamente<br>
+      ✓ Scrutinio completato<br>
+      ✓ Democrazia verificata<br>
+      ✓ Risultato assolutamente casuale</p>
+
+      <button class="again" id="againButton">RIVOTA 🔄</button>
+    </section>
+
+    <footer>
+      <strong>Commissione Mondiale per l'IT</strong>
+      <span>•</span>
+      <span>Protocollo SPEGNI-01</span>
+      <span>•</span>
+      <span>© 2026</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
